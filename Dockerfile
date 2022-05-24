@@ -1,6 +1,6 @@
 FROM golang:1.15.7-alpine3.13
 
-ENV GO111MODULE=on
+ENV GO111MODULE=auto
 
 WORKDIR /app/erupe
 
