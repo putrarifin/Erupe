@@ -3,7 +3,7 @@ services:
   db:
     image: postgres:13.1-alpine
     volumes:
-      - erupe-db-data:/var/lib/postgresql/data
+      - ./erupe-db-data:/var/lib/postgresql/data
     environment:
       - POSTGRES_USER=${POSTGRES_USERNAME}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
@@ -15,7 +15,7 @@ services:
   server_services:
     build: .
     volumes:
-      - erupe-server:/app/erupe
+      - ./erupe-server:/app/erupe
     ports:
       - "80:80"
       - "53312:53312"
