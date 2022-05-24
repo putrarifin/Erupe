@@ -1,0 +1,143 @@
+{
+    "host_ip": "127.0.0.1",
+    "bin_path": "bin",
+    "devmode": true,
+    "devmodeoptions": {
+        "serverName" : "",
+        "cleandb": false,
+        "maxlauncherhr": true,
+        "LogOutboundMessages": false,
+        "OpcodeMessages": false
+    },
+    "discord": {
+        "enabled": false,
+        "bottoken": "",
+        "channelid": ""
+    },
+    "database": {
+        "host": "db",
+        "port": 5432,
+        "user": "postgres",
+        "password": "password123",
+        "database": "erupe"
+    },
+    "launcher": {
+        "port": 80,
+        "UseOriginalLauncherFiles": false
+    },
+    "sign": {
+        "port": 53312
+    },
+    "channel": {
+        "port": 54001
+    },
+    "entrance": {
+        "port": 53310,
+        "entries": [
+            {
+                "name": " Server #1",
+                "ip": "127.0.0.1",
+                "unk2": 0,
+                "type": 3,
+                "season": 3,
+                "unk6": 0,
+                "allowedclientflags": "4096",
+                "channels": [
+                    {
+                        "port": 54001,
+                        "MaxPlayers": 100,
+                        "CurrentPlayers": 0,
+                        "Unk4": 0,
+                        "Unk5": 0,
+                        "Unk6": 0,
+                        "Unk7": 0,
+                        "Unk8": 0,
+                        "Unk9": 0,
+                        "Unk10": 319,
+                        "Unk11": 248,
+                        "Unk12": 159,
+                        "Unk13": 12345
+                    }
+                ]
+            },
+            {
+                "name": " Server #2",
+                "ip": "127.0.0.1",
+                "unk2": 0,
+                "type": 1,
+                "season": 2,
+                "unk6": 0,
+                "allowedclientflags": 0,
+                "channels": [
+                    {
+                        "port": 54001,
+                        "MaxPlayers": 50,
+                        "CurrentPlayers": 0,
+                        "Unk4": 0,
+                        "Unk5": 0,
+                        "Unk6": 0,
+                        "Unk7": 0,
+                        "Unk8": 0,
+                        "Unk9": 0,
+                        "Unk10": 318,
+                        "Unk11": 251,
+                        "Unk12": 155,
+                        "Unk13": 12345
+                    }
+                ]
+            },
+            {
+                "name": " Server #3",
+                "ip": "127.0.0.1",
+                "unk2": 0,
+                "type": 2,
+                "season": 1,
+                "unk6": 0,
+                "allowedclientflags": 0,
+                "channels": [
+                    {
+                        "port": 54001,
+                        "MaxPlayers": 50,
+                        "CurrentPlayers": 0,
+                        "Unk4": 0,
+                        "Unk5": 0,
+                        "Unk6": 0,
+                        "Unk7": 0,
+                        "Unk8": 0,
+                        "Unk9": 0,
+                        "Unk10": 318,
+                        "Unk11": 251,
+                        "Unk12": 155,
+                        "Unk13": 12345
+                    }
+                ]
+            },
+			{
+                "name": " Server #4",
+                "ip": "127.0.0.1",
+                "unk2": 0,
+                "type": 4,
+                "season": 0,
+                "unk6": 0,
+                "allowedclientflags": 0,
+                "channels": [
+                    {
+                        "port": 54001,
+                        "MaxPlayers": 50,
+                        "CurrentPlayers": 0,
+                        "Unk4": 0,
+                        "Unk5": 0,
+                        "Unk6": 0,
+                        "Unk7": 0,
+                        "Unk8": 0,
+                        "Unk9": 0,
+                        "Unk10": 318,
+                        "Unk11": 251,
+                        "Unk12": 155,
+                        "Unk13": 12345
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,32 @@
+version: "3.9"
+services:
+  db:
+    image: postgres:13.1-alpine
+    volumes:
+      - erupe-db-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=${POSTGRES_USERNAME}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=erupe
+    ports: 
+      - "5432:5432"
+    networks: 
+      - backend
+  server_services:
+    build: .
+    volumes:
+      - erupe-server:/app/erupe
+    ports:
+      - "80:80"
+      - "53312:53312"
+      - "54001:54001"
+      - "53310:53310"
+    networks: 
+      - backend
+    depends_on: 
+      - db
+networks:
+  backend:
+volumes:
+  erupe-db-data:
+  erupe-server:
